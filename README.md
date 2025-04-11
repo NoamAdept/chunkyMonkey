@@ -114,8 +114,4 @@ This layout ensures every chunk is self-describing, enabling the receiver to saf
 - 💬 Interactive progress bars or logs
 - 🔐 Add encryption
 
----
 
-## 📝 License
-
-MIT License. Use it, fork it, remix it!
