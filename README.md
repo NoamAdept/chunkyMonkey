@@ -100,7 +100,7 @@ Optional flags:
 Each chunk includes metadata and a slice of the compressed file to ensure reliable and verifiable reconstruction. The sequence number ensures chunks are reassembled in the correct order, the total count signals when the file is complete, and the SHA-256 checksum guarantees that the final reassembled data matches the original compressed stream — even if chunks arrive out of order.
 
 ┌────────────┬──────────────┬────────────┬─────────────┬─────────────────────┐
-│ Sequence # │ Total Chunks │ Data Length│   Data       │ SHA-256 Checksum    │
+│ Sequence # │ Total Chunks │ Data Length│   Data       │ SHA-256 Checksum   │
 │  (4 bytes) │   (4 bytes)  │  (4 bytes) │ (variable)  │  (32 bytes)         │
 └────────────┴──────────────┴────────────┴─────────────┴─────────────────────┘
 This layout ensures every chunk is self-describing, enabling the receiver to safely reorder, verify, and decompress the original file from independent parts.
